@@ -1,4 +1,5 @@
 import React, { useEffect, useState , useRef } from "react";
+import { NavLink, withRouter } from "react-router-dom";
 // import MyImg from './circle-cropped.png';
 import "./Header.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,13 +18,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import loadable from '@loadable/component'
 // const useIntersection = loadable(() => import("./useIntersection"));
 
-  /**
-   * Check if an element is in viewport
-   *
-   * @param {number} [offset]
-   * @returns {boolean}
-   */
-
 const Header  = () => {
 
   const myElement = useRef();
@@ -31,7 +25,7 @@ const Header  = () => {
   const [addSideBar , setAddSideBar] = useState(true)
 
   return (
-    <header className={`header ${myElement.current === undefined ? "show" : addSideBar ? "show" : "hide"}`}>
+    <header className={`header ${myElement.current === undefined ? "show" : addSideBar ? "show" : " "}`}>
       <div className="d-flex flex-column">
 
         <div className="profile">
@@ -47,43 +41,43 @@ const Header  = () => {
         <nav className="nav-menu">
           <ul>
             <li className="active">
-              <a href="#">
+              <NavLink to="/">
                 <FontAwesomeIcon className="bx bx-home" icon={faHome} />
                 <span>Home</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#about">
+              <NavLink to="/about">
                 <FontAwesomeIcon className="bx bx-user" icon={faUserSecret} style={{fontSize:'1.8rem'}} />
                 <span>About</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#resume">
+              <NavLink to="/resume">
                 <FontAwesomeIcon className="bx bx-file-blank" style={{fontSize:'2rem'}} icon={faFile} />
                 <span>Resume</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#portfolio">
+              <NavLink to="/portfolio">
                 <FontAwesomeIcon className="bx bx-book-content" icon={faIdCard} />
                 
                 <span>Portfolio</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#services">
+              <NavLink to="/services">
                 <FontAwesomeIcon className="bx bx-server" icon={faServer} />
                 
                 <span>Services</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#contact">
+              <NavLink to="/contact">
                 <FontAwesomeIcon className="bx bx-envelope" icon={faEnvelope} />
                 
                 <span>Contact</span>
-              </a>
+              </NavLink>
             </li>
 
           </ul>
@@ -95,5 +89,5 @@ const Header  = () => {
   );
 }
 
-export default Header;
+export default withRouter(Header);
 

@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import './App.css';
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +11,8 @@ import { lazy } from '@loadable/component'
 // import loadable from '@loadable/component'
 
 const Header = lazy(() => import("./Header")),
-	  Hero = lazy(() => import("./Hero"));
+	  Hero = lazy(() => import("./Hero")),
+	  About = lazy(() => import("./About"));
 
 setInterval(() => {
 	// window.location.reload()
@@ -28,8 +30,13 @@ const App = () => {
 			</div>
     	}>
 	    	<div className="App">
-		    	<Header />
-		    	<Hero />
+			    <BrowserRouter>
+			    	<Header />
+					<Switch>
+						<Route path="/" exact component={Hero} />
+						<Route path="/about" component={About} />
+					</Switch>
+			    </BrowserRouter>
 		    </div>
     	</Suspense>
     
@@ -38,3 +45,7 @@ const App = () => {
 
 export default App;
 
+						
+						// <Route path="/projects" component={Projects} />
+						// <Route path="/skills" component={Skills} />
+						// <Route path="/contact" component={Contact} />
