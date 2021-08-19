@@ -40,40 +40,27 @@ const Header  = () => {
 
         <nav className="nav-menu">
           <ul>
-            <li className="active">
-              <NavLink to="/">
+            <li>
+              <NavLink exact activeClassName="active" to="/">
                 <FontAwesomeIcon className="bx bx-home" icon={faHome} />
                 <span>Home</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about">
+              <NavLink exact activeClassName="active" to="/about">
                 <FontAwesomeIcon className="bx bx-user" icon={faUserSecret} style={{fontSize:'1.8rem'}} />
                 <span>About</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/resume">
-                <FontAwesomeIcon className="bx bx-file-blank" style={{fontSize:'2rem'}} icon={faFile} />
-                <span>Resume</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/portfolio">
+              <NavLink exact activeClassName="active" to="/portfolio">
                 <FontAwesomeIcon className="bx bx-book-content" icon={faIdCard} />
                 
                 <span>Portfolio</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services">
-                <FontAwesomeIcon className="bx bx-server" icon={faServer} />
-                
-                <span>Services</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">
+              <NavLink exact activeClassName="active" to="/contact">
                 <FontAwesomeIcon className="bx bx-envelope" icon={faEnvelope} />
                 
                 <span>Contact</span>
@@ -81,6 +68,13 @@ const Header  = () => {
             </li>
 
           </ul>
+          <footer id="footer">
+            <div className="container">
+              <div className="copyright">
+                &copy; Copyright <span>Designed by <strong> Mohmad Gamal </strong></span>
+              </div>
+            </div>
+          </footer>
         </nav>
         <button ref={myElement} onClick={() => setAddSideBar(!addSideBar)} type="button" className="mobile-nav-toggle d-xl-none"><FontAwesomeIcon icon={addSideBar ? faTimes : faBars}/></button>
 

@@ -12,7 +12,8 @@ import { lazy } from '@loadable/component'
 
 const Header = lazy(() => import("./Header")),
 	  Hero = lazy(() => import("./Hero")),
-	  About = lazy(() => import("./About"));
+	  About = lazy(() => import("./About")),
+	  Resume = lazy(() => import("./Resume"));
 
 setInterval(() => {
 	// window.location.reload()

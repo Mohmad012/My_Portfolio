@@ -16,6 +16,15 @@ const Hero  = () => {
     document.title = 'Home'
   },[])
 
+  useEffect(() => {
+
+      if(document.title == 'Home'){
+          document.body.style.backgroundColor = 'none';
+          if(document.body.style.backgroundColor == 'none') return;
+      }
+      
+  },[document.title])
+
   return (
     <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
       <div className="hero-container  text-warp" data-aos="fade-in">

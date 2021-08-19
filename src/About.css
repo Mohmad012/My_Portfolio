@@ -44,7 +44,8 @@ section {
     .about{
         width: calc(100% - 300px);
         float: right;
-        height: 100vh;
+        /*height: 100vh;*/
+        clear: left;
     }
 }
 

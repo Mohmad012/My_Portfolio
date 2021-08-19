@@ -38,12 +38,13 @@ function About(props) {
 	        </div>
 
 	        <div className="row">
-	          <div className="col-lg-4" data-aos="fade-right">
+	          <div className="col-lg-4" data-aos="flip-left">
 	            <img src={myImg} className="img-fluid rounded" alt=""/>
 	          </div>
 	          <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
 	            <h3>Frontend Developer &amp; Software Engineer.</h3>
 	            <div className="row">
+
 	              <div className="col-lg-6">
 	                <ul>
 	                  <li><i className="icofont-rounded-right"></i> <strong>Birthday:</strong><span> 14/07/1997</span></li>
@@ -51,6 +52,7 @@ function About(props) {
 	                  <li><i className="icofont-rounded-right"></i> <strong>City:</strong><span> Cairo , Egypt</span></li>
 	                </ul>
 	              </div>
+
 	              <div className="col-lg-6">
 	                <ul>
 	                  <li><i className="icofont-rounded-right"></i> <strong>Email:</strong><span> mohmadgamal1000@gmail.com</span></li>
@@ -58,6 +60,32 @@ function About(props) {
 	                  <li><i className="icofont-rounded-right"></i> <strong>Full Time Job:</strong><span> Available</span></li>
 	                </ul>
 	              </div>
+
+                <div className="col-lg-6 mb-4" data-aos="fade-up-right">
+                    <h3 className="resume-title">Language</h3>
+                    <div className="resume-item">
+                      <p>Arabic</p>
+                    </div>
+
+                    <div className="resume-item">
+                      <p>English</p>
+                    </div>
+                </div>
+
+                <div className="col-lg-6 mb-4" data-aos="fade-up-left">
+                    <h3 className="resume-title">Education</h3>
+                    <div className="resume-item">
+                      <p>Bachelor of Chemistry Science, Al-Azhar University</p>
+                      <p>2016 - 2020</p>
+                    </div>
+                </div>
+
+                <div className="col-lg-6" data-aos="fade-up">
+                    <h3 className="resume-title">Military service</h3>
+                    <div className="resume-item">
+                      <strong>Not Required</strong>
+                    </div>
+                </div>
 	            </div>
 	          </div>
 	        </div>
