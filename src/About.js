@@ -1,6 +1,4 @@
 import React, { useEffect , useState } from "react";
-import Aos from 'aos'
-import 'aos/dist/aos.css';
 import myImg from "./mohmad111.png"
 import './About.css';
 
@@ -9,7 +7,6 @@ function About(props) {
 	const [iconList , setIconList] = useState(false)
 
 	useEffect(() => {
-		Aos.init({ duration: 2000})
 		document.title = 'About';
 	},[])
 
@@ -38,7 +35,7 @@ function About(props) {
 	        </div>
 
 	        <div className="row">
-	          <div className="col-lg-4" data-aos="flip-left">
+	          <div className="col-lg-4" data-aos="fade-right">
 	            <img src={myImg} className="img-fluid rounded" alt=""/>
 	          </div>
 	          <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">

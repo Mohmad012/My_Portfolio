@@ -12,7 +12,6 @@ const myCV_URL = "https://media-exp1.licdn.com/dms/document/C4D2DAQHPZx_b4qt87w/
 const Hero  = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 2000})
     document.title = 'Home'
   },[])
 

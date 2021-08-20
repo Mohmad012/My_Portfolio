@@ -1,6 +1,8 @@
-import React, { Suspense } from "react";
+import React, { Suspense , useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import './App.css';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import $ from 'jquery';
@@ -13,13 +15,21 @@ import { lazy } from '@loadable/component'
 const Header = lazy(() => import("./Header")),
 	  Hero = lazy(() => import("./Hero")),
 	  About = lazy(() => import("./About")),
-	  Resume = lazy(() => import("./Resume"));
+	  Portfolio = lazy(() => import("./Portfolio"));
 
 setInterval(() => {
 	// window.location.reload()
 },200)
 
 const App = () => {
+
+  useEffect(() => {
+    Aos.init({
+    	duration: 2000,
+      	easing: "ease-in-out-back",
+      	once: true
+      })
+  },[])
 
   return (
     
@@ -36,6 +46,7 @@ const App = () => {
 					<Switch>
 						<Route path="/" exact component={Hero} />
 						<Route path="/about" component={About} />
+						<Route path="/portfolio" component={Portfolio} />
 					</Switch>
 			    </BrowserRouter>
 		    </div>
