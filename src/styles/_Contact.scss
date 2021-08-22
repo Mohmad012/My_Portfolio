@@ -1,0 +1,151 @@
+@use "mixins";
+
+// Contact
+.contact {
+  padding-bottom: 130px;
+  background: #f5f8fd;
+  @include mixins.minHeight;
+  @include mixins.minMedium{    
+      &{
+          @include mixins.sizePageInSmall;
+      }
+  }
+
+  .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+    svg {
+      font-size: 20px;
+      color: #149ddd;
+      float: left;
+      width: 44px;
+      height: 44px;
+      padding: 12px;
+      background: #dff3fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h4{
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #149ddd;
+    }
+
+    p{
+      padding: 0 0 10px 60px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #173b6c;
+
+
+    }
+
+    .address{
+      &:hover{
+        svg{
+            background: #149ddd;
+            color: #fff;
+        }
+      }
+    }
+
+    .email{
+      &:hover{
+        svg{
+            background: #149ddd;
+            color: #fff;
+        }
+      }
+      p{
+        padding: 5px 0 10px 16px;
+      }
+    }
+
+    .phone{
+      &:hover{
+        svg{
+            background: #149ddd;
+            color: #fff;
+        }
+      }
+    }
+  }
+
+  .email-form{
+    width: 100%;
+    padding-top: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+    label{
+      color: #6c757d;
+    }
+
+    input,textarea{
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    input{
+      height: 44px;
+    }
+
+    textarea{
+      padding: 10px 12px;
+    }
+
+    button[type="submit"]{
+      outline: none !important;
+      border:none;
+    }
+
+    @media(max-width: 992px){
+
+      .btn_snd{
+        margin-bottom: 38px;
+      }
+
+    }
+  }
+
+  .success-snd{
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #343a40;
+      z-index: -1;
+      position: fixed;
+      top: 50%;
+      left: -100%;
+      padding: 20px;
+      margin: 0 auto;
+      border-radius: 10px;
+      transition: all .5s;
+      &.show{
+        left: 15%;
+        z-index: 1;
+      }
+
+      &.hide{
+        left: 200%;
+        z-index: -1;
+      }
+
+    h3{
+      font-size: calc(.8em + 0.8vw);
+      color: #28a74f;
+      font-weight: bold;
+    }
+  }
+
+}
