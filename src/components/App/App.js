@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Aos from 'aos'
 
 import 'aos/dist/aos.css';
@@ -35,16 +35,14 @@ const App = () => {
     
   		<SuspenseCustom>
 	    	<div className="App">
-			    <BrowserRouter basename="/My_Portfolio">
-			    	<Header />
-					<Switch>
-						<Route path="/" exact component={Home} />
-						<Route path="/about" component={About} />
-						<Route path="/portfolio" component={Portfolio} />
-						<Route path="/skills" component={Skills} />
-						<Route path="/contact" component={Contact} />
-					</Switch>
-			    </BrowserRouter>
+		    	<Header />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/about" component={About} />
+					<Route path="/portfolio" component={Portfolio} />
+					<Route path="/skills" component={Skills} />
+					<Route path="/contact" component={Contact} />
+				</Switch>
 		    </div>
     	</SuspenseCustom>
     
