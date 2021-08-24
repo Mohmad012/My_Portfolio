@@ -25,7 +25,6 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
-    "react-tsparticles": "^1.30.4",
     "react-typed": "^1.2.0",
     "sass": "^1.38.0",
     "web-vitals": "^0.2.4"
@@ -51,7 +50,7 @@
       "not dead",
       "not op_mini all"
     ],
-  "development": [
+    "development": [
       ">0.3%",
       "not ie 11",
       "not dead",
