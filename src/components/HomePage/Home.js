@@ -6,7 +6,7 @@ import SuspenseCustom from '../SuspenseCustom'
 const Typed = loadable(() => import("react-typed"));
       
 
-const myCV_URL = "https://media-exp1.licdn.com/dms/document/C4D2DAQHgIh5yV4GJYg/profile-treasury-document-pdf-analyzed/0/1629879130959?e=1629968400&v=beta&t=5eQJlaT-wrLYuAbvZRHm5KIo5kfcsIAG1v7EiqwBM9E"
+const myCV_URL = "https://media-exp1.licdn.com/dms/document/C4D2DAQExh4jDKxwTjQ/profile-treasury-document-pdf-analyzed/0/1629980102939?e=1630069200&v=beta&t=O2O5H3Ym4gG_4cOLSVfKmIIpxESiyXwI2jze17_G_7s"
 
 const Home  = () => {
 
