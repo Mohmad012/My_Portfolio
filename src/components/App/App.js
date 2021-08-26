@@ -8,13 +8,13 @@ import '../../styles/index.scss';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import loadable from '@loadable/component'
+import loadable , { lazy } from '@loadable/component'
 
 import SuspenseCustom from '../SuspenseCustom'
 
 const Home = loadable(() => import("../HomePage/Home"));
 
-const Header = loadable(() => import("../Header/Header")),
+const Header = lazy(() => import("../Header/Header")),
 	  About = loadable(() => import("../About/About")),
 	  Portfolio = loadable(() => import("../Portfolio/Portfolio")),
 	  Skills = loadable(() => import("../Skills/Skills")),
