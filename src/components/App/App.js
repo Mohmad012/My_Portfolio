@@ -8,17 +8,17 @@ import '../../styles/index.scss';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import loadable , { lazy } from '@loadable/component'
+import loadable from '@loadable/component'
 
 import SuspenseCustom from '../SuspenseCustom'
 
 const Home = loadable(() => import("../HomePage/Home"));
 
-const Header = lazy(() => import("../Header/Header")),
-	  About = lazy(() => import("../About/About")),
-	  Portfolio = lazy(() => import("../Portfolio/Portfolio")),
-	  Skills = lazy(() => import("../Skills/Skills")),
-	  Contact = lazy(() => import("../Contact/Contact"));
+const Header = loadable(() => import("../Header/Header")),
+	  About = loadable(() => import("../About/About")),
+	  Portfolio = loadable(() => import("../Portfolio/Portfolio")),
+	  Skills = loadable(() => import("../Skills/Skills")),
+	  Contact = loadable(() => import("../Contact/Contact"));
 
 
 const App = () => {
