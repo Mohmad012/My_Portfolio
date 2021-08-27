@@ -33,9 +33,11 @@ const App = () => {
 
   return (
     
-  		<SuspenseCustom>
-	    	<div className="App">
+    	<div className="App">
+	    	<SuspenseCustom>
 		    	<Header />
+	    	</SuspenseCustom>
+		    <SuspenseCustom>
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/about" component={About} />
@@ -43,8 +45,9 @@ const App = () => {
 					<Route path="/skills" component={Skills} />
 					<Route path="/contact" component={Contact} />
 				</Switch>
-		    </div>
-    	</SuspenseCustom>
+			</SuspenseCustom>
+	    </div>
+    	
     
   );
 }
