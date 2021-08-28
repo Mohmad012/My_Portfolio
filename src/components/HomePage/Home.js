@@ -6,7 +6,7 @@ import SuspenseCustom from '../SuspenseCustom'
 const Typed = loadable(() => import("react-typed"));
       
 
-const myCV_URL = "https://media-exp1.licdn.com/dms/document/C4D2DAQEdgdFyMBucWQ/profile-treasury-document-pdf-analyzed/0/1629988189208?e=1630231200&v=beta&t=p4mf9NrWd-xODXeDnarAQn82JXeynhPDJACkY_HzVzc"
+// const myCV_URL = "https://media-exp1.licdn.com/dms/document/C4D2DAQEdgdFyMBucWQ/profile-treasury-document-pdf-analyzed/0/1629988189208?e=1630231200&v=beta&t=p4mf9NrWd-xODXeDnarAQn82JXeynhPDJACkY_HzVzc"
 
 const Home  = () => {
 
@@ -30,7 +30,9 @@ const Home  = () => {
                 loop={true}
               />
             </p>
-            <a href={myCV_URL} target="_blnck" className="btn btn-dark">Donwload CV</a>
+            <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQEdgdFyMBucWQ/profile-treasury-document-pdf-analyzed/0/1629988189208?e=1630231200&v=beta&t=p4mf9NrWd-xODXeDnarAQn82JXeynhPDJACkY_HzVzc"
+             target="_blnck" className="btn btn-dark">Donwload CV
+            </a>
           </div>
         </section>
     </SuspenseCustom>
