@@ -31,7 +31,7 @@ const Home  = () => {
               />
             </p>
             <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQEdgdFyMBucWQ/profile-treasury-document-pdf-analyzed/0/1629988189208?e=1630231200&v=beta&t=p4mf9NrWd-xODXeDnarAQn82JXeynhPDJACkY_HzVzc"
-             target="_blnck" className="btn btn-dark">Donwload CV
+             target="/black" className="btn btn-dark">Donwload CV
             </a>
           </div>
         </section>
