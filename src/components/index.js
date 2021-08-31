@@ -12,12 +12,6 @@ import Contact from "./Contact/Contact"
 
 import SuspenseCustom from './SuspenseCustom'
 
-// const Home = loadable(() => import("../HomePage/Home"));
+import MainContent from './mainContent'
 
-// const Header = lazy(() => import("../Header/Header")),
-// 	  About = loadable(() => import("../About/About")),
-// 	  Portfolio = loadable(() => import("../Portfolio/Portfolio")),
-// 	  Skills = loadable(() => import("../Skills/Skills")),
-// 	  Contact = loadable(() => import("../Contact/Contact"));
-
-export {Home , Header , About , Portfolio , Skills , Contact , SuspenseCustom}
+export {Home , Header , About , Portfolio , Skills , Contact , SuspenseCustom , MainContent}

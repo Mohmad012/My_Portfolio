@@ -10,6 +10,12 @@ import { faHouseUser , faInfoCircle , faPaperPlane , faGlobeEurope , faSuitcase 
 
 import {SuspenseCustom} from '../'
 
+function LinkTag({ URL , ClassLink , IcoName }) {
+  return (
+    <a href={URL} target="_blank" rel="noreferrer" className={ClassLink}><FontAwesomeIcon icon={IcoName} /></a>
+  )
+}
+
 const Header = () => {
 
   const myElement = useRef();
@@ -64,9 +70,9 @@ const Header = () => {
             {myImg && <img src={myImg} alt="MyImg" className="img-fluid rounded-circle" />}
             <h1 className="text-light">Mohmad Gamal</h1>
             <div className="social-links mt-3 text-center">
-              <a href="https://github.com/Mohmad012" rel="noreferrer" target="_blank" className="github"><FontAwesomeIcon className="bx bxl-github" icon={faGithub} /></a>
-              <a href="https://www.facebook.com/mohmad.ail.5/" rel="noreferrer" target="_blank" className="facebook"><FontAwesomeIcon className="bx bxl-facebook" icon={faFacebookF} /></a>
-              <a href="https://www.linkedin.com/in/mohmad-gamal-196943168/" rel="noreferrer" target="_blank" className="linkedin"><i></i><FontAwesomeIcon className="bx bxl-linkedin" icon={faLinkedinIn}/></a>
+              <LinkTag URL="https://github.com/Mohmad012" ClassLink="github" IcoName={faGithub} />
+              <LinkTag URL="https://www.facebook.com/mohmad.ail.5/" ClassLink="facebook" IcoName={faFacebookF} />
+              <LinkTag URL="https://www.linkedin.com/in/mohmad-gamal-196943168/" ClassLink="linkedin" IcoName={faLinkedinIn} />
             </div>
           </div>
 
@@ -90,7 +96,7 @@ const Header = () => {
             </footer>
           </nav>
           <button ref={myElement} onClick={() => setAddSideBar(!addSideBar)} type="button" className="mobile-nav-toggle d-xl-none"><FontAwesomeIcon icon={addSideBar ? faTimes : faBars}/></button>
-          <button onClick={scrollToTop} type="button" class={`scrollToTop ${isVisible ? "show" : "hide"}`}><FontAwesomeIcon icon={faChevronUp} /></button>
+          <button onClick={scrollToTop} type="button" className={`scrollToTop ${isVisible ? "show" : "hide"}`}><FontAwesomeIcon icon={faChevronUp} /></button>
         </div>
       </header>
     </SuspenseCustom>

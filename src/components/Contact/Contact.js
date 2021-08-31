@@ -6,7 +6,29 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import {SuspenseCustom} from '../'
+import {SuspenseCustom , MainContent} from '../'
+
+
+function DIVInfo({ ClassName , IcoName , textH4 , textP , SecClass }) {
+  return (
+    <div className={ClassName}>
+      <FontAwesomeIcon icon={IcoName} />
+      <h4>{textH4}</h4>
+      {SecClass ? <p className="text-truncate">{textP}</p> : <p>{textP}</p>}
+      
+    </div>
+  )
+}
+
+function DIVFormGroup({ ClassDiv , text , nameInput , nameVal , funHandel , typeInput }) {
+  return (
+    <div className={ClassDiv}>
+      <label htmlFor={nameInput}>{text}</label>
+      <input type={typeInput} name={nameInput} className="form-control" id={nameInput} value={nameVal} onChange={funHandel} required />
+      <div className="validate"></div>
+    </div>
+  )
+}
 
 const Contact = () => {
 
@@ -78,37 +100,16 @@ const Contact = () => {
 
   return (
     <SuspenseCustom>
-      <section id="contact" className="contact">
-        <div className="container">
-
-          <div className="section-title" data-aos="fade-down">
-            <h2>Contact</h2>
-            <p>I Will See Your Message On My Email...</p>
-          </div>
-
+      <MainContent ID='contact' NameClassSection='contact' textP='I Will See Your Message On My Email...' textH='Contact'>
           <div className="row">
 
             <div className="col-lg-5 d-flex align-items-stretch" data-aos="fade-up-right">
               <div className="info">
-                <div className="address">
-                  <FontAwesomeIcon icon={faMapMarker} />
-                  <h4>Location:</h4>
-                  <p>Cairo,Egypt</p>
-                </div>
+                <DIVInfo ClassName='address' IcoName={faMapMarker} textH4='Location:' textP='Cairo,Egypt' />
+                <DIVInfo ClassName='email' IcoName={faPaperPlane} textH4='Email:' textP='mohmadgamal1000@gmail.com' SecClass={true} />
+                <DIVInfo ClassName='phone' IcoName={faPhone} textH4='Call:' textP='+201223072359' />
 
-                <div className="email">
-                  <FontAwesomeIcon icon={faPaperPlane} />
-                  <h4>Email:</h4>
-                  <p className="text-truncate" style={{maxWidth: 'calc(100% - 20px)'}}>mohmadgamal1000@gmail.com</p>
-                </div>
-
-                <div className="phone">
-                  <FontAwesomeIcon icon={faPhone} />
-                  <h4>Call:</h4>
-                  <p>+201223072359</p>
-                </div>
-
-                <iframe src={urlMap} title="This is my location" frameborder="0" style={{border:0, width: '100%', height: '290px'}} allowfullscreen="" loading="lazy"></iframe>
+                <iframe src={urlMap} title="This is my location" style={{border:0, width: '100%', height: '290px'}} loading="lazy"></iframe>
               </div>
 
             </div>
@@ -117,22 +118,16 @@ const Contact = () => {
               <form onSubmit={sendEmail} className="email-form">
                 <div className="container">
                   <div className="form-row">
-                    <div className="form-group pb-1 col-md-6">
-                      <label htmlFor="name">Your Name</label>
-                      <input type="text" name="name" className="form-control" id="name" value={mainName} onChange={handelMainName} data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="form-group pb-1 col-md-6">
-                      <label htmlFor="email">Your Email</label>
-                      <input type="email" className="form-control" name="email" id="email" value={email} onChange={handelEmail} data-rule="email" data-msg="Please enter a valid email" required />
-                      <div className="validate"></div>
-                    </div>
+                    <DIVFormGroup ClassDiv="form-group pb-1 col-md-6" text="Your Name"
+                                  nameInput="name" nameVal={mainName} funHandel={handelMainName} typeInput="text"
+                                />
+                    <DIVFormGroup ClassDiv="form-group pb-1 col-md-6" text="Your Email" nameInput="email"
+                                  nameVal={email} funHandel={handelEmail} typeInput="email"
+                                />
                   </div>
-                  <div className="form-group pb-1">
-                    <label htmlFor="subject">Subject</label>
-                    <input type="text" className="form-control" name="Subject" id="subject" value={mainSubject} onChange={handelSubject} data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
-                    <div className="validate"></div>
-                  </div>
+                  <DIVFormGroup ClassDiv="form-group pb-1" text="Subject" nameInput="Subject"
+                                nameVal={mainSubject} funHandel={handelSubject} typeInput="text"
+                              />
                   <div className="form-group pb-1">
                     <label htmlFor="message">Message</label>
                     <textarea className={`form-control ${reject ? "is-invalid" : reject == null ? "" : "is-valid"}`} name="message" id="message" rows="10" data-rule="required" value={msg} onBlur={handelCheckMsg} onChange={handelMsg} data-msg="Please write something for us" required></textarea>
@@ -151,9 +146,7 @@ const Contact = () => {
             </div>
 
           </div>
-
-        </div>
-      </section>
+      </MainContent>
     </SuspenseCustom>
   );
 }
