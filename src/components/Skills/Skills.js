@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import allSkills from './data.js'
 import { lazy } from '@loadable/component'
 
-import SuspenseCustom from '../SuspenseCustom'
+import {SuspenseCustom} from '../'
 const ProgressBar = lazy(() => import("react-animated-progress-bar"));
 
 const Skills = () => {

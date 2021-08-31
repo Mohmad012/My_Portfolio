@@ -8,7 +8,7 @@ import { faGithub , faFacebookF , faLinkedinIn } from '@fortawesome/free-brands-
 import { faHouseUser , faInfoCircle , faPaperPlane , faGlobeEurope , faSuitcase , faBars , faTimes , faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 
-import SuspenseCustom from '../SuspenseCustom'
+import {SuspenseCustom} from '../'
 
 const Header = () => {
 
@@ -53,13 +53,15 @@ const Header = () => {
     {id:5, pageName:"Contact", icoName:faPaperPlane, pathPage:"/contact"}
   ]
 
+  const myImg = 'https://fv2-2.failiem.lv/thumb_show.php?i=trf6kpxe9&view'
+
   return (
     <SuspenseCustom>
       <header className={`header ${myElement.current === undefined ? "show" : addSideBar ? "show" : " "}`}>
         <div className="d-flex flex-column">
 
           <div className="profile">
-            <img src='https://fv2-2.failiem.lv/thumb_show.php?i=trf6kpxe9&view' alt="MyImg" className="img-fluid rounded-circle" />
+            {myImg && <img src={myImg} alt="MyImg" className="img-fluid rounded-circle" />}
             <h1 className="text-light">Mohmad Gamal</h1>
             <div className="social-links mt-3 text-center">
               <a href="https://github.com/Mohmad012" rel="noreferrer" target="_blank" className="github"><FontAwesomeIcon className="bx bxl-github" icon={faGithub} /></a>

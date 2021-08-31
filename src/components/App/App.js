@@ -8,18 +8,7 @@ import '../../styles/index.scss';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import loadable , { lazy } from '@loadable/component'
-
-import SuspenseCustom from '../SuspenseCustom'
-
-const Home = loadable(() => import("../HomePage/Home"));
-
-const Header = lazy(() => import("../Header/Header")),
-	  About = loadable(() => import("../About/About")),
-	  Portfolio = loadable(() => import("../Portfolio/Portfolio")),
-	  Skills = loadable(() => import("../Skills/Skills")),
-	  Contact = loadable(() => import("../Contact/Contact"));
-
+import {Home , Header , About , Portfolio , Skills , Contact} from '../'
 
 const App = () => {
 
@@ -34,18 +23,14 @@ const App = () => {
   return (
     
     	<div className="App">
-	    	<SuspenseCustom>
-		    	<Header />
-	    	</SuspenseCustom>
-		    <SuspenseCustom>
-				<Switch>
-					<Route path="/" exact component={Home} />
-					<Route path="/about" component={About} />
-					<Route path="/portfolio" component={Portfolio} />
-					<Route path="/skills" component={Skills} />
-					<Route path="/contact" component={Contact} />
-				</Switch>
-			</SuspenseCustom>
+	    	<Header />
+			<Switch>
+				<Route path="/" exact component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/portfolio" component={Portfolio} />
+				<Route path="/skills" component={Skills} />
+				<Route path="/contact" component={Contact} />
+			</Switch>
 	    </div>
     	
     

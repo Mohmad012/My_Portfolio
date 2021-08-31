@@ -6,7 +6,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import SuspenseCustom from '../SuspenseCustom'
+import {SuspenseCustom} from '../'
 
 const Contact = () => {
 

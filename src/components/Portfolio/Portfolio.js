@@ -6,7 +6,7 @@ import Isotope from 'isotope-layout';
 import 'isotope-cells-by-row';
 
 import allData from './data.js'
-import SuspenseCustom from '../SuspenseCustom'
+import {SuspenseCustom} from '../'
 
 const Portfolio = () => {
 
@@ -59,7 +59,7 @@ const Portfolio = () => {
 
                 <div key={i} className={`col-lg-4 col-md-6 portfolio-item ${item.filterMode}`}>
                   <div className="portfolio-wrap">
-                    <img src={item.img} className="img-fluid rounded" alt={item.name} />
+                    {item.img && <img src={item.img} className="img-fluid rounded" alt={item.name} />}
                     <span className="name_project font-weight-bold">{item.name}</span>
                     <div className="portfolio-links">
                       <a target="_blnck" href={item.linkLive}>Live</a>
