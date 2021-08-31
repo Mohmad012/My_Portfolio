@@ -3,7 +3,10 @@
 #home {
   width: 100%;
   height: 100vh;
-  background: url("https://files.fm/thumb_show.php?i=bcn3wuuat&view") center center;
+  @if "https://files.fm/thumb_show.php?i=bcn3wuuat&view" {
+    background: url("https://files.fm/thumb_show.php?i=bcn3wuuat&view") center center;  
+  }
+  
   background-size: cover;
 
   @media (min-width: 1024px) {
