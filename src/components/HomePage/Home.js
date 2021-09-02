@@ -35,7 +35,7 @@ const Home  = () => {
                   loop={true}
                 />
               </p>
-              <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQFYc41OdW5W3Q/profile-treasury-document-pdf-analyzed/0/1630171127300?e=1630479600&v=beta&t=7zfRGBbZn7u8C5SQeBuSsg-FWKEdKFDXIxSn0Qw0d0k"
+              <a href="https://drive.google.com/file/d/1QVuravfUOp-ApX6DiKwCj2ppjo37FdW5/view"
                target="_blank" rel="noreferrer" className="btn btn-dark">Donwload CV
               </a>
             </div>
