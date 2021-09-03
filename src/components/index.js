@@ -1,14 +1,14 @@
-import Home from "./HomePage/Home"
+import {Home} from "./HomePage"
 
-import Header from "./Header/Header"
+import {Header} from "./Header"
 
-import About from "./About/About"
+import {About} from "./About"
 
-import Portfolio from "./Portfolio/Portfolio"
+import {Portfolio} from "./Portfolio"
 
-import Skills from "./Skills/Skills"
+import {Skills} from "./Skills"
 
-import Contact from "./Contact/Contact"
+import {Contact} from "./Contact"
 
 import SuspenseCustom from './SuspenseCustom'
 

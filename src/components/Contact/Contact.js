@@ -1,34 +1,13 @@
 import React, { useState , useEffect } from "react";
 import emailjs from 'emailjs-com';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import {SuspenseCustom , MainContent} from '../'
-
-
-function DIVInfo({ ClassName , IcoName , textH4 , textP , SecClass }) {
-  return (
-    <div className={ClassName}>
-      <FontAwesomeIcon icon={IcoName} />
-      <h4>{textH4}</h4>
-      {SecClass ? <p className="text-truncate">{textP}</p> : <p>{textP}</p>}
-      
-    </div>
-  )
-}
-
-function DIVFormGroup({ ClassDiv , text , nameInput , nameVal , funHandel , typeInput }) {
-  return (
-    <div className={ClassDiv}>
-      <label htmlFor={nameInput}>{text}</label>
-      <input type={typeInput} name={nameInput} className="form-control" id={nameInput} value={nameVal} onChange={funHandel} required />
-      <div className="validate"></div>
-    </div>
-  )
-}
+import DIVInfo from './DIVInfo'
+import DIVFormGroup from './DIVFormGroup'
 
 const Contact = () => {
 

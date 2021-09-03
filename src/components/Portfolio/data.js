@@ -1,36 +1,6 @@
-// import ChatNow from "../../images/imgProjects/chatNow.png"
-// import amazon from "../../images/imgProjects/amazon.jpg"
-// import tiktok from "../../images/imgProjects/tiktok.png"
-// import tinder from "../../images/imgProjects/tinder.png"
-// import shopStore from "../../images/imgProjects/store.png"
-// import TV from "../../images/imgProjects/logoFlix.png"
-// import Todo from "../../images/imgProjects/todo.png"
-// import Bookmark from "../../images/imgProjects/illustration-features-tab-2.svg"
-// import Car from "../../images/imgProjects/car.jpg"
-// import Composition from "../../images/imgProjects/developer.jpg"
-// import Special from "../../images/imgProjects/landing2.jpg"
-// import Elite from "../../images/imgProjects/slide1.jpg"
-// import Prototypes from "../../images/imgProjects/landing7.png"
-// import Home from "../../images/imgProjects/home.jpg"
-// import Tech from "../../images/imgProjects/tec.jpg"
+import { ChatNow, amazon, tiktok, tinder, shopStore, TV, Todo, Bookmark, Car, Composition, Special, Elite, Prototypes, Home, Tech } from '../../assets/images'
 
-const   ChatNow = "https://fv2-2.failiem.lv/thumb_show.php?i=dhkpg2ppp&view",
-		amazon = "https://fv2-1.failiem.lv/thumb_show.php?i=2nhj675pb&view",
-		tiktok = "https://fv2-2.failiem.lv/thumb_show.php?i=9fevv5y3q&view",
-		tinder = "https://fv2-1.failiem.lv/thumb_show.php?i=ra5t5knfw&view",
-		shopStore = "https://fv2-2.failiem.lv/thumb_show.php?i=bh8f9rzgn&view",
-		TV = "https://fv2-3.failiem.lv/thumb_show.php?i=fpezv36df&view",
-		Todo = "https://fv2-3.failiem.lv/thumb_show.php?i=rd2fcawsc&view",
-		Bookmark = "https://fv2-2.failiem.lv/thumb_show.php?i=6dmgshqfq&view",
-		Car = "https://fv2-1.failiem.lv/thumb_show.php?i=mtfy6fxec&view",
-		Composition = "https://fv2-2.failiem.lv/thumb_show.php?i=v52xj3cvg&view",
-		Special = "https://fv2-1.failiem.lv/thumb_show.php?i=vhyfmjy5b&view",
-		Elite = "https://fv2-2.failiem.lv/thumb_show.php?i=759exk9kb&view",
-		Prototypes = "https://fv2-2.failiem.lv/thumb_show.php?i=s88dstvnm&view",
-		Home = "https://fv2-1.failiem.lv/thumb_show.php?i=kt43be4vz&view",
-		Tech = "https://fv2-3.failiem.lv/thumb_show.php?i=y374tmju8&view",
-
-
+const  	
 		ChatNowLive = "https://mohmad012.github.io/ChatNow/",
 		amazonLive = "https://amazon-app-self.vercel.app/",
 		tiktokLive = "https://tiktok-f8fc2.web.app/",
