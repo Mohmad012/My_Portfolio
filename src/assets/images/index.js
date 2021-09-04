@@ -14,7 +14,7 @@ import Prototypes from "./imgProjects/landing7.png"
 import Home from "./imgProjects/home.jpg"
 import Tech from "./imgProjects/tec.jpg"
 import myImgCircle from './circle.jpg'
-import myImgFull from './myImg.jpg'
+import myImgFull from './myImg.png'
 
 export{
 	ChatNow,
