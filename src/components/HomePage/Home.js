@@ -27,7 +27,7 @@ const Home  = () => {
                 loop={true}
               />
             </p>
-            <a href="https://drive.google.com/file/d/1Jx1B8tw60M17xy-iRHQ2hHVqCfX6TE05/view"
+            <a href="https://drive.google.com/file/d/1Jx1B8tw60M17xy-iRHQ2hHVqCfX6TE05/view?usp=sharing"
              target="_blank" rel="noreferrer" className="btn btn-dark">Donwload CV
             </a>
           </div>
