@@ -1,3 +1,4 @@
+import imgProject from './imgProject.png'
 import ChatNow from "./imgProjects/chatNow.png"
 import amazon from "./imgProjects/amazon.jpg"
 import tiktok from "./imgProjects/tiktok.png"
@@ -17,6 +18,7 @@ import myImgCircle from './circle.jpg'
 import myImgFull from './myImg.png'
 
 export{
+	imgProject,
 	ChatNow,
 	amazon,
 	tiktok,

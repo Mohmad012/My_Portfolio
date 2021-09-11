@@ -1,6 +1,7 @@
-import { ChatNow, amazon, tiktok, tinder, shopStore, TV, Todo, Bookmark, Car, Composition, Special, Elite, Prototypes, Home, Tech } from '../../assets/images'
+import { imgProject , ChatNow, amazon, tiktok, tinder, shopStore, TV, Todo, Bookmark, Car, Composition, Special, Elite, Prototypes, Home, Tech } from '../../assets/images'
 
 const  	
+		profile_templateLive = "https://mohmad012.github.io/profile_template/",
 		ChatNowLive = "https://mohmad012.github.io/ChatNow/",
 		amazonLive = "https://amazon-app-self.vercel.app/",
 		tiktokLive = "https://tiktok-f8fc2.web.app/",
@@ -25,6 +26,7 @@ const
 		tiktokBack = "https://github.com/Mohmad012/TikTok_backend",
 		tinderBack = "https://github.com/Mohmad012/Tinder_backend",
 
+		profile_templateGithub = "https://github.com/Mohmad012/profile_template",
 		amazonGithub = "https://github.com/Mohmad012/Amazon_App",
 		shopStoreGithub = "https://github.com/Mohmad012/Store_Shop",
 		TVGithub = "https://github.com/Mohmad012/TV_Search_Flix",
@@ -39,6 +41,7 @@ const
 		TechGithub = "https://github.com/Mohmad012/bootstrap3-1",
 
 
+		profile_templateName = "Profile Template",
 		ChatNowName = "Chat App",
 		amazonName = "Amazon App",
 		tiktokName = "TikTok App",
@@ -56,6 +59,14 @@ const
 		TechName = "Tech Site";
 
 const allData = [
+			{
+				img:imgProject,
+				filterMode:'filter-web',
+				linkLive:profile_templateLive,
+				linkGithub:profile_templateGithub,
+				name:profile_templateName,
+				frontBack:false,
+			},
 			{
 				img:ChatNow,
 				filterMode:'filter-app',
