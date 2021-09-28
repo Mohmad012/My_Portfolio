@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/My_Portfolio/static/css/main.5a2dfe72.chunk.css",
-    "main.js": "/My_Portfolio/static/js/main.6f49aace.chunk.js",
-    "main.js.map": "/My_Portfolio/static/js/main.6f49aace.chunk.js.map",
+    "main.js": "/My_Portfolio/static/js/main.5f9d0d79.chunk.js",
+    "main.js.map": "/My_Portfolio/static/js/main.5f9d0d79.chunk.js.map",
     "runtime-main.js": "/My_Portfolio/static/js/runtime-main.d69b0f57.js",
     "runtime-main.js.map": "/My_Portfolio/static/js/runtime-main.d69b0f57.js.map",
     "static/css/2.1879f39a.chunk.css": "/My_Portfolio/static/css/2.1879f39a.chunk.css",
@@ -18,6 +18,7 @@
     "static/js/2.9f799d10.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/2.9f799d10.chunk.js.LICENSE.txt",
     "static/js/3.6832f7bc.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/3.6832f7bc.chunk.js.LICENSE.txt",
     "static/js/4.e0b5d240.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/4.e0b5d240.chunk.js.LICENSE.txt",
+    "static/media/TempDemoApp.619e39af.png": "/My_Portfolio/static/media/TempDemoApp.619e39af.png",
     "static/media/amazon.360068bf.jpg": "/My_Portfolio/static/media/amazon.360068bf.jpg",
     "static/media/car.39f4a3d5.jpg": "/My_Portfolio/static/media/car.39f4a3d5.jpg",
     "static/media/circle.0f4d5443.jpg": "/My_Portfolio/static/media/circle.0f4d5443.jpg",
@@ -41,6 +42,6 @@
     "static/css/2.1879f39a.chunk.css",
     "static/js/2.9f799d10.chunk.js",
     "static/css/main.5a2dfe72.chunk.css",
-    "static/js/main.6f49aace.chunk.js"
+    "static/js/main.5f9d0d79.chunk.js"
   ]
 }
