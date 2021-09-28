@@ -1,5 +1,6 @@
 import profile_Template from '../../assets/images/imgProjects/profile_Template.png'
 import profile_react from '../../assets/images/imgProjects/profile_react.png'
+import TempDemoApp from '../../assets/images/imgProjects/TempDemoApp.png'
 import ChatNow from '../../assets/images/imgProjects/chatNow.png'
 import amazon from '../../assets/images/imgProjects/amazon.jpg'
 import tiktok from '../../assets/images/imgProjects/tiktok.png'
@@ -22,6 +23,7 @@ import myImgFull from '../../assets/images/myImg.png'
 export{
 	profile_Template,
 	profile_react,
+	TempDemoApp,
 	ChatNow,
 	amazon,
 	tiktok,

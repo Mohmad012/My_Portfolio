@@ -1,6 +1,7 @@
 import {
 		profile_Template,
 		profile_react,
+		TempDemoApp,
 		ChatNow,
 		amazon,
 		tiktok,
@@ -22,6 +23,7 @@ import {
 const  	
 		profile_templateLive = "https://mohmad012.github.io/profile_template/",
 		profile_reactLive = "https://mohmad012.github.io/template_react/",
+		Template_Deme_AppLive = "https://mohmad012.github.io/Template_Deme_App/",
 		ChatNowLive = "https://mohmad012.github.io/ChatNow/",
 		amazonLive = "https://amazon-app-self.vercel.app/",
 		tiktokLive = "https://tiktok-f8fc2.web.app/",
@@ -48,6 +50,7 @@ const
 
 		profile_templateGithub = "https://github.com/Mohmad012/profile_template",
 		profile_reactGithub = "https://github.com/Mohmad012/template_react",
+		Template_Deme_AppGithub = "https://github.com/Mohmad012/Template_Deme_App",
 		amazonGithub = "https://github.com/Mohmad012/Amazon_App",
 		shopStoreGithub = "https://github.com/Mohmad012/Store_Shop",
 		TVGithub = "https://github.com/Mohmad012/TV_Search_Flix",
@@ -64,6 +67,7 @@ const
 
 		profile_templateName = "Profile Template",
 		profile_reactName = "Profile React",
+		Template_Deme_AppName = "Template Deme App",
 		ChatNowName = "Chat App",
 		amazonName = "Amazon App",
 		tiktokName = "TikTok App",
@@ -81,6 +85,14 @@ const
 		TechName = "Tech Site";
 
 const allData = [
+			{
+				img:TempDemoApp,
+				filterMode:'filter-web',
+				linkLive:Template_Deme_AppLive,
+				linkGithub:Template_Deme_AppGithub,
+				name:Template_Deme_AppName,
+				frontBack:false,
+			},
 			{
 				img:profile_Template,
 				filterMode:'filter-web',
