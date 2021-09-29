@@ -102,6 +102,14 @@ const allData = [
 				frontBack:false,
 			},
 			{
+				img:amazon,
+				filterMode:'filter-web',
+				linkLive:amazonLive,
+				linkGithub:amazonGithub,
+				name:amazonName,
+				frontBack:false,
+			},
+			{
 				img:ChatNow,
 				filterMode:'filter-app',
 				linkLive:ChatNowLive,
@@ -109,14 +117,6 @@ const allData = [
 				backGithub:ChatNowBack,
 				name:ChatNowName,
 				frontBack:true,
-			},
-			{
-				img:amazon,
-				filterMode:'filter-web',
-				linkLive:amazonLive,
-				linkGithub:amazonGithub,
-				name:amazonName,
-				frontBack:false,
 			},
 			{
 				img:profile_react,
