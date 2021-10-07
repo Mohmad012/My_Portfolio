@@ -1,31 +1,7 @@
-import {
-		masref,
-		profile_Template,
-		profile_react,
-		TempDemoApp,
-		ChatNow,
-		amazon,
-		tiktok,
-		tinder,
-		shopStore,
-		TV,
-		Todo,
-		Bookmark,
-		Car,
-		Composition,
-		Special,
-		Elite,
-		Prototypes,
-		Home,
-		Tech
-		
-	} from '../../utils/allImgs'
+import { imgProject , ChatNow, amazon, tiktok, tinder, shopStore, TV, Todo, Bookmark, Car, Composition, Special, Elite, Prototypes, Home, Tech } from '../../assets/images'
 
 const  	
-		Masref_AppLive = "https://mohmad012.github.io/Masref_App/",
 		profile_templateLive = "https://mohmad012.github.io/profile_template/",
-		profile_reactLive = "https://mohmad012.github.io/template_react/",
-		Template_Deme_AppLive = "https://mohmad012.github.io/Template_Deme_App/",
 		ChatNowLive = "https://mohmad012.github.io/ChatNow/",
 		amazonLive = "https://amazon-app-self.vercel.app/",
 		tiktokLive = "https://tiktok-f8fc2.web.app/",
@@ -50,10 +26,7 @@ const
 		tiktokBack = "https://github.com/Mohmad012/TikTok_backend",
 		tinderBack = "https://github.com/Mohmad012/Tinder_backend",
 
-		Masref_AppGithub = "https://github.com/Mohmad012/Masref_App",
 		profile_templateGithub = "https://github.com/Mohmad012/profile_template",
-		profile_reactGithub = "https://github.com/Mohmad012/template_react",
-		Template_Deme_AppGithub = "https://github.com/Mohmad012/Template_Deme_App",
 		amazonGithub = "https://github.com/Mohmad012/Amazon_App",
 		shopStoreGithub = "https://github.com/Mohmad012/Store_Shop",
 		TVGithub = "https://github.com/Mohmad012/TV_Search_Flix",
@@ -68,10 +41,7 @@ const
 		TechGithub = "https://github.com/Mohmad012/bootstrap3-1",
 
 
-		Masref_AppName = "Masref App",
 		profile_templateName = "Profile Template",
-		profile_reactName = "Profile React",
-		Template_Deme_AppName = "Template Deme App",
 		ChatNowName = "Chat App",
 		amazonName = "Amazon App",
 		tiktokName = "TikTok App",
@@ -90,35 +60,11 @@ const
 
 const allData = [
 			{
-				img:TempDemoApp,
-				filterMode:'filter-web',
-				linkLive:Template_Deme_AppLive,
-				linkGithub:Template_Deme_AppGithub,
-				name:Template_Deme_AppName,
-				frontBack:false,
-			},
-			{
-				img:masref,
-				filterMode:'filter-web',
-				linkLive:Masref_AppLive,
-				linkGithub:Masref_AppGithub,
-				name:Masref_AppName,
-				frontBack:false,
-			},
-			{
-				img:profile_Template,
+				img:imgProject,
 				filterMode:'filter-web',
 				linkLive:profile_templateLive,
 				linkGithub:profile_templateGithub,
 				name:profile_templateName,
-				frontBack:false,
-			},
-			{
-				img:amazon,
-				filterMode:'filter-web',
-				linkLive:amazonLive,
-				linkGithub:amazonGithub,
-				name:amazonName,
 				frontBack:false,
 			},
 			{
@@ -131,11 +77,11 @@ const allData = [
 				frontBack:true,
 			},
 			{
-				img:profile_react,
+				img:amazon,
 				filterMode:'filter-web',
-				linkLive:profile_reactLive,
-				linkGithub:profile_reactGithub,
-				name:profile_reactName,
+				linkLive:amazonLive,
+				linkGithub:amazonGithub,
+				name:amazonName,
 				frontBack:false,
 			},
 			{
