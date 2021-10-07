@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/My_Portfolio/static/css/main.5a2dfe72.chunk.css",
-    "main.js": "/My_Portfolio/static/js/main.fab97186.chunk.js",
-    "main.js.map": "/My_Portfolio/static/js/main.fab97186.chunk.js.map",
+    "main.js": "/My_Portfolio/static/js/main.e7f1217b.chunk.js",
+    "main.js.map": "/My_Portfolio/static/js/main.e7f1217b.chunk.js.map",
     "runtime-main.js": "/My_Portfolio/static/js/runtime-main.d69b0f57.js",
     "runtime-main.js.map": "/My_Portfolio/static/js/runtime-main.d69b0f57.js.map",
     "static/css/2.1879f39a.chunk.css": "/My_Portfolio/static/css/2.1879f39a.chunk.css",
@@ -22,7 +22,6 @@
     "static/media/amazon.360068bf.jpg": "/My_Portfolio/static/media/amazon.360068bf.jpg",
     "static/media/car.39f4a3d5.jpg": "/My_Portfolio/static/media/car.39f4a3d5.jpg",
     "static/media/circle.0f4d5443.jpg": "/My_Portfolio/static/media/circle.0f4d5443.jpg",
-    "static/media/demo.8ec6d655.png": "/My_Portfolio/static/media/demo.8ec6d655.png",
     "static/media/developer.74cef10a.jpg": "/My_Portfolio/static/media/developer.74cef10a.jpg",
     "static/media/home.f32d6ffb.jpg": "/My_Portfolio/static/media/home.f32d6ffb.jpg",
     "static/media/illustration-features-tab-2.e933bd6d.svg": "/My_Portfolio/static/media/illustration-features-tab-2.e933bd6d.svg",
@@ -43,6 +42,6 @@
     "static/css/2.1879f39a.chunk.css",
     "static/js/2.9f799d10.chunk.js",
     "static/css/main.5a2dfe72.chunk.css",
-    "static/js/main.fab97186.chunk.js"
+    "static/js/main.e7f1217b.chunk.js"
   ]
 }
