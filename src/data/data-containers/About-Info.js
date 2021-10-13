@@ -1,4 +1,4 @@
-let myInfo =`	I'am a ${(<span>) 'Full Stack Developer' (</span>)} with experience in Building UI components using react,
+let myInfo =`	I'am a Full Stack Developer  with experience in Building UI components using react,
 				managing application state using Redux, Rendering App on server using next.js,
 				handling client-side routing using React-router-dom and Node.js,
 				Express.js As a Backend and MongoDB, PostgreSQL As a Database using Git As version control.
