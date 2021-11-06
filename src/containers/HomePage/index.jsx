@@ -29,7 +29,7 @@ const HomeContainer  = () => {
                 loop={true}
               />
             </p>
-            <a href="https://docs.google.com/document/d/1qYFerAC5FsfWzwN8ICg0a9Ki_ksxKiEQ/edit?usp=sharing&ouid=117543481275194727045&rtpof=true&sd=true"
+            <a href="https://drive.google.com/file/d/1j3IPkNLf5ITbEoJTuEXL1xN2Dn1knGmO/view?usp=sharing"
              target="_blank" rel="noopener noreferrer" className="btn btn-dark">Donwload CV
             </a>
           </div>
