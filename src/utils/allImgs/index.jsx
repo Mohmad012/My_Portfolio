@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 import ChatNow from '../../assets/images/imgProjects/chatNow.png'
 import amazon from '../../assets/images/imgProjects/amazon.jpg'
-=======
 import masref from '../../assets/images/imgProjects/demo.png'
->>>>>>> 834368414a433ae1cb9814e8f9602d71d6523701
 import profile_Template from '../../assets/images/imgProjects/profile_Template.png'
 import profile_react from '../../assets/images/imgProjects/profile_react.png'
 import TempDemoApp from '../../assets/images/imgProjects/TempDemoApp.png'

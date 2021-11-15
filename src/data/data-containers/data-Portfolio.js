@@ -124,7 +124,7 @@ const allData = [
 			},
 			{
 				img:MemoryImg,
-				filterMode:'filter-card',
+				filterMode:'filter-other',
 				linkLive:MemoryLive,
 				linkGithub:MemoryGithub,
 				name:MemoryName,

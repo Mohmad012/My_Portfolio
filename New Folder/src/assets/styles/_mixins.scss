@@ -1,0 +1,36 @@
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, black, 30%)) {
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin sizePageInSmall {
+  width: calc(100% - 300px);
+  float: right;
+  clear: left;
+}
+
+@mixin minHeight {
+  min-height: 100vh;
+}
+
+@mixin minMedium {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

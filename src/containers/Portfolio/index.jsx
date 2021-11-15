@@ -33,6 +33,7 @@ const PortfolioContainer = () => {
                   <ListTag text='App' filterMode='.filter-app' NameClass='' />
                   <ListTag text='Card' filterMode='.filter-card' NameClass='' />
                   <ListTag text='Web' filterMode='.filter-web' NameClass='' />
+                  <ListTag text='Other' filterMode='.filter-other' NameClass='' />
                 </ul>
               </div>
             </div>
